@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,600;0,700;1,200;1,300;1,600;1,700&family=Rajdhani:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="hero-img">
+            <div class="banner">
+                <h1>Commit</h1>
+            </div>
+        </div>
+        <div class="hero-form">
+            <div class="text-container">
+                <h1 class="hero-text">This is not areal online sercive! You know you need something like this in your
+                    life to help you
+                    realize
+                    and
+                    affirm your deepest dreams and meaning as a person. Sign up now to experience fuldulment and reach
+                    enlightenment.</h1>
+                <br>
+                <h1 class="hero-text">You know you got this</h1>
+            </div>
+            <div class="form-container">
+                <form action="fulfilment.com/enlightenment" method="post" class="form">
+                    <div class="inputs">
+
+                        <div class="fieldsets">
+                            <h1 class="form-cta">Let's do this!</h1>
+                            <fieldset>
+                                <div class="input">
+                                    <label for="first_name">First Name</label>
+                                    <input type="text" name="first_name" id="first_name" placeholder="Jesus " required>
+                                </div>
+                                <div class="input">
+                                    <label for="last_name">Last Name</label>
+                                    <input type="text" name="last_name" id="last_name" placeholder="Christ" required>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="input">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="jbonez@godshouse.com"
+                                        required>
+                                </div>
+                                <div class="input">
+                                    <label for="phone_number">Phone Number</label>
+                                    <input type="tel" name="phone_number" id="phone_number" placeholder="234-234-1234"
+                                        minlength="7" maxlength="7" required>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="input">
+                                    <label for="password">password</label>
+                                    <input type="password" name="password" id="password" placeholder="********"
+                                        minlength="3" required>
+                                </div>
+                                <div class="input">
+                                    <label for="confirm-password">confirm password</label>
+                                    <input type="password" name="confirm-password" id="confirm-password"
+                                        pattern="(/^\S+@\S+\.\S+$/)" placeholder="********" required>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Create Account</button>
+
+                </form>
+                <h2 class="act-login">Already have an account? <a href="#"><em>Log in</em></a></h2>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

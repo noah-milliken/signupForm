@@ -1,0 +1,275 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "hero-img form-container"
+    ;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1400px;
+    height: 960px;
+}
+
+.hero-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: hero-img;
+    border: 1px solid black;
+    background-image: url('./assets/background_image.webp');
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner>h1 {
+    color: white;
+    font-size: 6rem;
+}
+
+.hero-form {
+    grid-area: form-container;
+
+    background-color: rgb(247, 250, 251);
+}
+
+
+.text-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 33%;
+
+}
+
+.hero-text {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+.text-container>h1 {
+    padding-left: 50px;
+    width: 80%;
+}
+
+
+.form-container {
+
+    display: flex;
+    flex-direction: column;
+    height: 66%;
+}
+
+.form-cta {
+    margin: 20px 0;
+}
+
+.fieldsets {
+
+    padding-left: 40px;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+fieldset {
+
+    display: flex;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.inputs {
+
+    background-color: rgb(255, 255, 255);
+}
+
+.input {
+    color: rgb(88, 94, 104);
+    font-size: .55rem;
+    letter-spacing: .05rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 20px 0;
+}
+
+.input>input {
+    margin-top: 3px;
+    width: 200px;
+    height: 20px;
+    border: solid 1px rgb(237, 238, 241);
+    border-radius: 5px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: #596D48 solid 1px;
+}
+
+.submit-btn {
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    margin: 20px 0 0 40px;
+}
+
+.act-login {
+    margin: 30px 0 0 40px;
+}
+
+.act-login>a {
+    text-decoration: none;
+    color: #596D48;
+    ;
+}
